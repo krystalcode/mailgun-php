@@ -216,9 +216,9 @@ class Mailgun
      *
      * @deprecated Will be removed in 3.0
      */
-    public function get($endpointUrl, $queryString = [])
+    public function get($endpointUrl, $queryString = [], array $headers = [])
     {
-        return $this->restClient->get($endpointUrl, $queryString);
+        return $this->restClient->get($endpointUrl, $queryString, $headers);
     }
 
     /**

@@ -190,9 +190,9 @@ class RestClient
      *
      * @return \stdClass
      */
-    public function get($endpointUrl, $queryString = [])
+    public function get($endpointUrl, $queryString = [], array $headers = [])
     {
-        return $this->send('GET', $endpointUrl.'?'.http_build_query($queryString));
+        return $this->send('GET', $endpointUrl.'?'.http_build_query($queryString), null, [], $headers);
     }
 
     /**
