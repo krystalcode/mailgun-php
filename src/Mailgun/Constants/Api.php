@@ -16,7 +16,7 @@ class Api
 {
     const API_USER = 'api';
 
-    const SDK_VERSION = '1.7';
+    const SDK_VERSION = '2.8.1';
 
     const SDK_USER_AGENT = 'mailgun-sdk-php';
 
